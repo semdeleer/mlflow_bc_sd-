@@ -27,17 +27,17 @@ $ terraform apply
 
 ## Usage
 
-*Connect to the container
+* Connect to the container
 ```bash
 $ docker exec -it <container_name_or_id> /bin/bash
 ```
 
-*Go through the directory and find the run.py
+* Go through the directory and find the run.py
 ```bash
 $ dir
 ```
 
-*run the py file
+* run the py file
 ```bash
 $ python run.py
 ```
