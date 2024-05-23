@@ -1,8 +1,9 @@
 artifact_uri: file:///C:/Users/semde/BeCodeH/Projects/Project9/mlflow/mlruns/418737624905748784/0a3b5aefb4214fa89ef1297db9c15462/artifacts
+deleted_time: 1716469201161
 end_time: 1716468046317
 entry_point_name: ''
 experiment_id: '418737624905748784'
-lifecycle_stage: active
+lifecycle_stage: deleted
 run_id: 0a3b5aefb4214fa89ef1297db9c15462
 run_name: KNN
 run_uuid: 0a3b5aefb4214fa89ef1297db9c15462

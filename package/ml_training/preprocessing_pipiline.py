@@ -7,7 +7,10 @@ from sklearn.compose import ColumnTransformer
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
 from sklearn.impute import SimpleImputer
 from sklearn.neighbors import KNeighborsClassifier
-
+from sklearn.ensemble import GradientBoostingClassifier
+from sklearn.linear_model import LogisticRegression
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.ensemble import AdaBoostClassifier
 
 
 
@@ -49,7 +52,7 @@ def get_pipline(df, X_train, modelN) -> Pipeline:
         ])
 
         return pipe
-    else:
+    elif modelN == "KNN":
         model = KNeighborsClassifier()
 
         # A pipeline that includes the above
@@ -60,5 +63,47 @@ def get_pipline(df, X_train, modelN) -> Pipeline:
         ])
 
         return pipe
+    elif modelN == "Gradient":
+        model = GradientBoostingClassifier()
 
-   
+        # A pipeline that includes the above
+        pipe = ImbPipeline([
+            ('preprocessor', preprocessor),
+            ('smote', SMOTE(random_state=42)),
+            ('KNN', model)
+        ])
+
+        return pipe
+    elif modelN == "Log":
+        model = LogisticRegression()
+
+        # A pipeline that includes the above
+        pipe = ImbPipeline([
+            ('preprocessor', preprocessor),
+            ('smote', SMOTE(random_state=42)),
+            ('KNN', model)
+        ])
+
+        return pipe
+    elif modelN == "Rand":
+        model = RandomForestClassifier()
+
+        # A pipeline that includes the above
+        pipe = ImbPipeline([
+            ('preprocessor', preprocessor),
+            ('smote', SMOTE(random_state=42)),
+            ('KNN', model)
+        ])
+
+        return pipe
+    else:
+        model = AdaBoostClassifier()
+
+        # A pipeline that includes the above
+        pipe = ImbPipeline([
+            ('preprocessor', preprocessor),
+            ('smote', SMOTE(random_state=42)),
+            ('KNN', model)
+        ])
+
+        return pipe

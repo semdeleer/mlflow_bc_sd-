@@ -45,3 +45,7 @@ if __name__ == '__main__':
     
     experiments("bankChirners", "decisionTree", "./package/data/BankChurners.csv", "Tree")
     experiments("bankChirners", "KNN", "./package/data/BankChurners.csv", "KNN")
+    experiments("bankChirners", "GradientBoost", "./package/data/BankChurners.csv", "Gradient")
+    experiments("bankChirners", "Log regression", "./package/data/BankChurners.csv", "Log")
+    experiments("bankChirners", "Randomforest", "./package/data/BankChurners.csv", "Rand")
+    experiments("bankChirners", "adaboost", "./package/data/BankChurners.csv", "ada")
