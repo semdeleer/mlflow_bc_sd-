@@ -6,6 +6,7 @@ from sklearn.pipeline import make_pipeline
 from sklearn.compose import ColumnTransformer
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
 from sklearn.impute import SimpleImputer
+from sklearn.neighbors import KNeighborsClassifier
 
 
 
@@ -44,18 +45,18 @@ def get_pipline(df, X_train, modelN) -> Pipeline:
         pipe = ImbPipeline([
             ('preprocessor', preprocessor),
             ('smote', SMOTE(random_state=42)),
-            ('randomforestclassifier', model)
+            ('DecisionTreeClassifier', model)
         ])
 
         return pipe
     else:
-        model = DecisionTreeClassifier()
+        model = KNeighborsClassifier()
 
         # A pipeline that includes the above
         pipe = ImbPipeline([
             ('preprocessor', preprocessor),
             ('smote', SMOTE(random_state=42)),
-            ('randomforestclassifier', model)
+            ('KNN', model)
         ])
 
         return pipe
