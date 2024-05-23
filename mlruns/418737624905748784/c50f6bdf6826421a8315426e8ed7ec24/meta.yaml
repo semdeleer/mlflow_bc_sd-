@@ -1,0 +1,16 @@
+artifact_uri: file:///C:/Users/semde/BeCodeH/Projects/Project9/mlflow/mlruns/418737624905748784/c50f6bdf6826421a8315426e8ed7ec24/artifacts
+deleted_time: 1716459540559
+end_time: 1716387829505
+entry_point_name: ''
+experiment_id: '418737624905748784'
+lifecycle_stage: deleted
+run_id: c50f6bdf6826421a8315426e8ed7ec24
+run_name: dicisionTree
+run_uuid: c50f6bdf6826421a8315426e8ed7ec24
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1716387823344
+status: 3
+tags: []
+user_id: semde
