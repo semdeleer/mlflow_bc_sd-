@@ -7,10 +7,9 @@
 
 
 ## 📖 Description
-This project is the deployment of the analyst project from data analyst [Viktor](https://github.com/CoViktor/customer_churn_analysis.git)
-I deployed the piplines and model in mlflow to see keep track of the model accuraycs an choose the best model
-this was than converted to a docker container to run the mlflow server
-this docker container was set-up with terraform
+This project involves deploying an analytical solution originally developed by [Viktor](https://github.com/CoViktor/customer_churn_analysis.git).
+I have implemented the pipelines and models using MLflow to monitor model accuracies and select the best-performing one. Subsequently, the solution was containerized using Docker to host the MLflow server. The Docker container was then set up and managed with Terraform.
+
 
 
 ## 🛠 Installation
