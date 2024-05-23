@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/semde/BeCodeH/Projects/Project9/mlflow/mlruns/418737624905748784/0a3b5aefb4214fa89ef1297db9c15462/artifacts
+end_time: 1716468046317
+entry_point_name: ''
+experiment_id: '418737624905748784'
+lifecycle_stage: active
+run_id: 0a3b5aefb4214fa89ef1297db9c15462
+run_name: KNN
+run_uuid: 0a3b5aefb4214fa89ef1297db9c15462
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1716468042309
+status: 3
+tags: []
+user_id: semde
